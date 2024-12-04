@@ -1,0 +1,58 @@
+site_name: My MkDocs Material Documentation
+site_url: https://sitename.example
+theme:
+  name: material
+  font:
+    text: Roboto Serif
+    code: Roboto Mono
+  icon:
+    logo: fontawesome/solid/crow
+  features:
+    - navigation.footer
+  palette:
+    # Dark Mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Dark mode
+      primary: teal
+      accent: deep purple
+
+    # Light Mode
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Light mode
+      primary: orange
+      accent: blue
+
+markdown_extensions:
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class:  mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed:
+      alternate_style: true
+
+  - admonition
+  - pymdownx.details
+
+extra:
+  social:
+    - icon: simple/github
+      link: https://github.com/CrowRising
+    - icon: simple/linkedin
+      link: https://www.linkedin.com/in/crowrising/
+
+copyright: Copyright &copy; 2024 Crow Rising
