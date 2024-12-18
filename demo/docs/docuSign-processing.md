@@ -40,6 +40,7 @@
 5. Use arrow to move to the next document.
 6. Click **Complete Task** when finished.
 7. This will take you back to the orginal screen with the bar graph and you are done!
+![finished screen](assets/images/opcon sample shot.png)
 
 
 ![](assets/dncu_logo.png)
